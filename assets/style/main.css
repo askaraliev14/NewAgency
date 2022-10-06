@@ -7,33 +7,158 @@
     width: 100%;
     height: 100vh;
     background-color: black;
+    background-image: url(../images/webp/bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 20px solid white;
 }
 
 .agency-navbar {
-    height: 50px;
+    height: 80px;
     width: 100%;
-    padding: 10px 20px;
+    padding: 20px 50px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 /* Navigation LEFT side */
+.burger {
+    position: absolute;
+}
+
 .nav-left {
     display: flex;
+    align-items: center;
+
 }
-.nav-list{
+
+.nav-list {
     width: 100%;
     display: flex;
 }
-.nav-list li{
-    padding: 15px 10px;
+
+.nav-list li {
     width: fit-content;
+    list-style: none;
 }
+
+.choyxona-logo {
+    margin-right: 20px;
+}
+
 .nav-link {
     width: 100%;
-    font-size: 20px;
-    color: white;
+    list-style: none;
     text-decoration: none;
+    font-family: "RoadRadio";
+    font-weight: 100;
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    color: #F2F2F2;
+    margin-left: 30px;
+}
+
+.language-box {
+    display: flex;
 }
 
 /* Navigation LEFT side END */
+
+/* Works Page */
+
+
+.works {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.works-box {
+    display: flex;
+    left: 5px;
+    top: 50%;
+    margin-top: -100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.project {
+    background: #333;
+    width: 33%;
+    height: 300px;
+    margin-left: 25px;
+    float: left;
+    border-radius: 5px;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.swiper-container .swiper-scrollbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.swiper-container .swiper-wrapper {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.swiper-container .swiper-slide {
+    height: 100%;
+    width: auto;
+    /*Styling*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Sans-serif;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    /**/
+}
+
+.swiper-container .swiper-slide:nth-child(1) {
+    background: wheat;
+    margin-left: -250px;
+}
+
+.swiper-container .swiper-slide:nth-child(2) {
+    background: black;
+}
+
+.swiper-container .swiper-slide:nth-child(3) {
+    background: black;
+}
+
+.swiper-container .swiper-slide:nth-child(4) {
+    background: #778899;
+}
+
+/* Works Page */

@@ -1,0 +1,20 @@
+{
+    "ru": {
+        "langdesc": "RU",
+        "Projects": "Проекты",
+        "Agency": "Агенство",
+        "Contacts": "Контакты"
+    },
+    "en": {
+        "langdesc": "ENG",
+        "Projects": "Projects",
+        "Agency": "Agency",
+        "Contacts": "Contacts"
+    },
+    "uz": {
+        "langdesc": "UZ",
+        "Projects": "Proyektlar",
+        "Agency": "Agenstva",
+        "Contacts": "Kontakt"
+    }
+}

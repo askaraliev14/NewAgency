@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "RoadRadio";
+    font-weight: 900;
+    src: url(../fonts/RoadRadio-Black.ttf);
+}
+
+@font-face {
+    font-family: "RoadRadio";
+    font-weight: 700;
+    src: url(../fonts/RoadRadio-Bold.ttf);
+}
+
+@font-face {
+    font-family: "RoadRadio";
+    font-weight: 400;
+    src: url(../fonts/RoadRadio.ttf);
+}
+
+@font-face {
+    font-family: "RoadRadio";
+    font-weight: 300;
+    src: url(../fonts/RoadRadio-Light.ttf);
+}
+
+@font-face {
+    font-family: "RoadRadio";
+    font-weight: 100;
+    src: url(../fonts/RoadRadio-Thin.ttf);
+}

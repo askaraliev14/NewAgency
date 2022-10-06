@@ -8,72 +8,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/main.css">
 </head>
+<script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+<script src="./assets/script/multilang.js"></script>
+<script src="./assets/script/main.js"></script>
 
-<body>
+<body onload="onLoad()">
     <div class="agency-wrapper">
         <header>
-            <nav class="agency-navbar">
-                <div class="nav-left">
-                    <a href="#">
-                        LOGO
+            <div class="agency-navbar">
+                <!-- <select name="listlanguages" onchange="langSelectChange(this)">
+                </select> -->
+                <div class="burger">
+                    <span></span>
+                </div>
+                <nav class="nav-left">
+                    <a href="#" class="choyxona-logo">
+                        <img src="./assets/images/svg/logoChoy.svg" alt="">
                     </a>
                     <ul class="nav-list">
                         <li>
-                            <a class="nav-link" href="#">Проекты</a>
+                            <a id="Projects" class="nav-link" href="#">Проекты</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Агенство</a>
+                            <a id="Agency" class="nav-link" href="#">Агенство</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Контакты</a>
+                            <a id="Contacts" class="nav-link" href="#">Контакты</a>
                         </li>
                     </ul>
-                </div>
-                <div class="nav-center">
-                    <a class="nav-link" href="#">Контакты</a>
-                </div>
-                <div class="nav-right">
-                    <ul class="nav-list">
-                        <li>
-                            <a class="nav-link" href="#">Проекты</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Агенство</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
+                <select name="listlanguages" class="language-box" onchange="langSelectChange(this)">
+                </select>
+            </div>
         </header>
         <main>
-            .
         </main>
     </div>
 
     <!-- LOADER -->
-    <div id="introLoader" class="loader">
+    <!-- <div id="introLoader" class="loader">
         <div class="loader-box">
-            <div class="loader-text1_black">A</div>
-            <div class="loader-text3_black">G</div>
-            <div class="loader-text4_black">E</div>
-            <div class="loader-text5_black">N</div>
-            <div class="loader-text6_black">C</div>
-            <div class="loader-text7_black">Y</div>
+            <div class="loader-text1_black">CH</div>
+            <div class="loader-text2_black">O</div>
+            <div class="loader-text3_black">Y</div>
+            <div class="loader-text4_black">X</div>
+            <div class="loader-text5_black">O</div>
+            <div class="loader-text6_black">N</div>
+            <div class="loader-text7_black">A</div>
         </div>
         <div class="loader-text__box">
-            <div class="loader-text1">A</div>
-            <div class="loader-text2">G</div>
-            <div class="loader-text3">E</div>
-            <div class="loader-text4">N</div>
-            <div class="loader-text5">C</div>
-            <div class="loader-text6">Y</div>
+            <div class="loader-text1">CH</div>
+            <div class="loader-text2">O</div>
+            <div class="loader-text3">Y</div>
+            <div class="loader-text4">X</div>
+            <div class="loader-text5">O</div>
+            <div class="loader-text6">N</div>
+            <div class="loader-text7">A</div>
         </div>
-    </div>
+    </div> -->
     <!-- LOADER -->
-    <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
-    <script src="./assets/script/main.js"></script>
+
 </body>
 
 </html>

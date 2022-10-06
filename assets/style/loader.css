@@ -9,16 +9,19 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 .loader-text {
     color: black;
     font-size: 60px;
+    font-family: 'RoadRadio';
+    font-weight: 400;
 }
 
 .loader-box {
     display: flex;
-    width: 460px;
+    width: 660px;
     height: 130px;
     background-color: #ffffff;
     position: absolute;
@@ -43,6 +46,8 @@
     color: #000;
     font: normal 1rem/1.1 DIN Condensed W08 Regular, sans-serif;
     font-size: 100px;
+    font-family: 'RoadRadio';
+    font-weight: 400;
 }
 
 .loader-text1,
@@ -55,6 +60,8 @@
     font: normal 1rem/1.1 DIN Condensed W08 Regular, sans-serif;
     color: #ffffff;
     font-size: 100px;
+    font-family: 'RoadRadio';
+    font-weight: 400;
 }
 
 .loader-text1_black {

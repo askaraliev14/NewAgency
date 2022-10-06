@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>JavaScript multi-language localisation example</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+<script src="./assets/script/multilang.js"></script>
+<script src="./assets/script/main.js"></script>
+
+<body onload="onLoad()">
+	Select language from list to switch between translations:
+	<select name="listlanguages" onchange="langSelectChange(this)">
+	</select><br />
+
+	<div>
+		<div id="Start" class="bl">Start game</div>
+		<div id="Sound" class="bl">Sound</div>
+		<div id="Editor" class="bl">Editor</div>
+		<div id="Music" class="bl">Music</div>
+		<div id="Options" class="bl">Options</div>
+	</div><br>
+	<div>
+		<a id="Reset game">Reset game</a><br />
+		<div id="No" class="rd">no</div>
+		<div id="Yes" class="gr">yes</div>
+	</div><br>
+	<div>
+		<a id="Credits1">Credits1</a>
+		Harry<br />
+		<a id="Credits2">Credits2</a>
+		Dick<br />
+		<a id="Credits3">Credits3</a>
+		Tom<br />
+	</div><br>
+	<div id="EndText">End text</div>
+</body>
+
+</html>
