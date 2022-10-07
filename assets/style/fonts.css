@@ -1,29 +1,77 @@
 @font-face {
     font-family: "RoadRadio";
     font-weight: 900;
-    src: url(../fonts/RoadRadio-Black.ttf);
+    src: url(../fonts/raodradio/RoadRadio-Black.ttf);
 }
 
 @font-face {
     font-family: "RoadRadio";
     font-weight: 700;
-    src: url(../fonts/RoadRadio-Bold.ttf);
+    src: url(../fonts/raodradio/RoadRadio-Bold.ttf);
 }
 
 @font-face {
     font-family: "RoadRadio";
     font-weight: 400;
-    src: url(../fonts/RoadRadio.ttf);
+    src: url(../fonts/raodradio/RoadRadio.ttf);
 }
 
 @font-face {
     font-family: "RoadRadio";
     font-weight: 300;
-    src: url(../fonts/RoadRadio-Light.ttf);
+    src: url(../fonts/raodradio/RoadRadio-Light.ttf);
 }
 
 @font-face {
     font-family: "RoadRadio";
     font-weight: 100;
-    src: url(../fonts/RoadRadio-Thin.ttf);
+    src: url(../fonts/raodradio/RoadRadio-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 900;
+    src: url(../fonts/acrobat/Akrobat-Black.otf) format();
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 800;
+    src: url(../fonts/acrobat/Akrobat-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 700;
+    src: url(../fonts/acrobat/Akrobat-Bold.otf);
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 600;
+    src: url(../fonts/acrobat/Akrobat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 400;
+    src: url(../fonts/acrobat/Akrobat-Regular.otf);
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 300;
+    src: url(../fonts/acrobat/Akrobat-Light.otf);
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 200;
+    src: url(../fonts/acrobat/Akrobat-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: "Acrobat";
+    font-weight: 100;
+    src: url(../fonts/acrobat/Akrobat-Thin.otf);
 }

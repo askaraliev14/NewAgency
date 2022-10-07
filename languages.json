@@ -3,18 +3,21 @@
         "langdesc": "RU",
         "Projects": "Проекты",
         "Agency": "Агенство",
-        "Contacts": "Контакты"
+        "Contacts": "Контакты",
+        "title": "АГЕНТСТВО - ЗАНИМАЕТСЯ РАЗРАБОТКОЙ САЙТОВ, БРЕНДИНГОМ, КРЕАТИВОМ И МЕДИАКОНТЕНТОМ. УПАКОВЫВАЕМ БРЕНДЫ"
     },
     "en": {
         "langdesc": "ENG",
         "Projects": "Projects",
         "Agency": "Agency",
-        "Contacts": "Contacts"
+        "Contacts": "Contacts",
+        "title": "AGENCY SPECIALIZES IN ELABORATION OF WEBSITE, BRANDING, AND DEVELOPMENT OF IMMERSIVE AND CREATIVE MEDIA SOLUTIONS"
     },
     "uz": {
         "langdesc": "UZ",
         "Projects": "Proyektlar",
         "Agency": "Agenstva",
-        "Contacts": "Kontakt"
+        "Contacts": "Kontakt",
+        "title": "AGENTLIK - SAYTLAR, BRENDING, IJODLIK VA MEDIA KONTETLARNI ISHLAB CHIQARISH. QADAKLASH BRANDLARI"
     }
 }

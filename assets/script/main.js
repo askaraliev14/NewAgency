@@ -15,7 +15,7 @@ function initList() {
   // get language list element
   let list = document.getElementsByName("listlanguages")[0];
   // clear all options
-  list.options.length = 0;
+  list.li.length = 0;
 
   // add all available languages
   for (let key in multilang.phrases) {
@@ -92,4 +92,3 @@ const swiper = new Swiper('.swiper-container', {
     sensitivity: 2.5,
   },
 });
-

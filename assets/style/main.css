@@ -52,8 +52,6 @@
     width: 100%;
     list-style: none;
     text-decoration: none;
-    font-family: "RoadRadio";
-    font-weight: 100;
     font-family: 'RoadRadio';
     font-style: normal;
     font-weight: 300;
@@ -68,7 +66,56 @@
     display: flex;
 }
 
+.lang-btn {
+    background: transparent;
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    color: #F2F2F2;
+    border: none;
+    margin-left: 30px;
+}
+
 /* Navigation LEFT side END */
+
+/* Index Main */
+.choyxona-main {
+    width: 100%;
+    height: max-content;
+}
+
+.choyxona-title {
+    position: absolute;
+    top: 30%;
+    margin-left: 50px;
+    font-family: 'Acrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 50%;
+}
+
+/* Index Main */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Works Page */
 
