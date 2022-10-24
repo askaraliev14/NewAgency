@@ -10,7 +10,7 @@
     background-image: url(../images/webp/bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    border: 20px solid white;
+    /* border: 20px solid white; */
 }
 
 .agency-navbar {
@@ -21,6 +21,47 @@
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.agency-navbar__white {
+    height: 100px;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.agency-navbar__project {
+    height: 80px;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-size: 100% 0;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+
+.header:hover {
+    background-color: #fff;
+    background-size: 100% 100%;
+}
+
+.agency-navbar__white:hover {
+    width: 100%;
 }
 
 /* Navigation LEFT side */
@@ -48,6 +89,20 @@
     margin-right: 20px;
 }
 
+.nav-link__dark {
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    margin-left: 30px;
+    color: #000000;
+}
+
 .nav-link {
     width: 100%;
     list-style: none;
@@ -55,8 +110,8 @@
     font-family: 'RoadRadio';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
     letter-spacing: 0.06em;
     color: #F2F2F2;
     margin-left: 30px;
@@ -71,10 +126,23 @@
     font-family: 'RoadRadio';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
     letter-spacing: 0.06em;
     color: #F2F2F2;
+    border: none;
+    margin-left: 30px;
+}
+
+.lang-btn__dark {
+    background: transparent;
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    color: #000000;
     border: none;
     margin-left: 30px;
 }
@@ -101,24 +169,49 @@
     width: 50%;
 }
 
+.choyxona-nav {
+    position: absolute;
+    top: 75%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.choyxona-link {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.arrow-right__white {
+    position: relative;
+    background-image: url(../images/webp/ArrowWhite.webp);
+    width: 220px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.choyxona-link:hover+.arrow-right__white {
+    -webkit-animation: arrow-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: arrow-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 /* Index Main */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Works Page */
-
 
 .works {
     position: absolute;
@@ -156,6 +249,7 @@
     height: 100%;
     display: flex;
     position: relative;
+    z-index: 2;
 }
 
 .swiper-container .swiper-scrollbar {
@@ -176,13 +270,12 @@
     display: flex;
     transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
 }
-
 .swiper-container .swiper-slide {
     height: 100%;
     width: auto;
     /*Styling*/
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-size: 40px;
     font-family: Sans-serif;
@@ -191,21 +284,666 @@
     /**/
 }
 
+/* .nav-slider {
+    width: 350px !important;
+}
+
+.project-slider {
+    background-color: #000000;
+    width: 1380px !important;
+} */
+
 .swiper-container .swiper-slide:nth-child(1) {
-    background: wheat;
-    margin-left: -250px;
+    background: white;
+    /* margin-left: -320px; */
+    padding-left: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-bottom: 150px;
 }
 
 .swiper-container .swiper-slide:nth-child(2) {
     background: black;
+    display: flex;
+    justify-content: start;
+    margin-left: -300px;
+    width: max-content !important;
 }
 
 .swiper-container .swiper-slide:nth-child(3) {
-    background: black;
+    background: #fff;
 }
 
-.swiper-container .swiper-slide:nth-child(4) {
-    background: #778899;
+.swiper-container .swiper-slide:nth-child(4) {}
+
+.contact-slider {
 }
+
+.projects-navigation {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-btn {
+    width: 120px;
+    height: 120px;
+    margin-top: 150px;
+    margin-left: 60px;
+    background-color: #E31E24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-btn i {
+    width: 30px;
+    height: 35px;
+    position: relative;
+    left: 5px;
+    background-image: url(../images/webp/arrow-left30.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vertical-text {
+    font-family: 'Acrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    margin-bottom: 50px;
+    margin-left: 35px;
+}
+
+.main-text {
+    font-family: 'Acrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.project-box {
+    height: 100%;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.project-box:hover {
+    -webkit-transform: scale(1.05,1.05);
+    -moz-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+}
+
+.project-box:hover .project-text {
+    transition: 0.5s all ease-in-out;
+    transform: scale(unset);
+    zoom: unset;
+}
+
+.project-box:hover .plus-btn {
+    width: 240px;
+    height: 240px;
+    transition: 0.5s all ease-in-out;
+}
+
+.project-box:hover .plus-btn i {
+    position: absolute;
+    transition: unset;
+}
+
+.plus-btn {
+    width: 110px;
+    height: 110px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.plus-btn i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/webp/plus.webp);
+}
+
+.project-text {
+    padding: 0 0 80px 50px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project-title {
+    font-family: 'Acrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 75px;
+    line-height: 85px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.project-subtitle {
+    width: 150px;
+    font-family: 'PF DinDisplay Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.project-box:nth-child(1) {
+    background-image: url(../images/webp/1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-box:nth-child(2) {
+    background-image: url(../images/webp/2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-box:nth-child(3) {
+    background-image: url(../images/webp/3.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-box:nth-child(4) {
+    background-image: url(../images/webp/4.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-box:nth-child(5) {
+    background-image: url(../images/webp/5.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-box:nth-child(6) {
+    background-image: url(../images/webp/6.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrow-right {
+    width: 220px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/webp/strelka.webp);
+}
+
+.arrow-right:hover {
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
 
 /* Works Page */
+
+/* Contacts Page */
+
+.contacts-box {
+    width: 100%;
+    height: 100%;
+    padding: 0 180px 140px 100px;
+    display: flex;
+    align-items: end;
+}
+
+.agency-info__title {
+    font-family: 'PF DinDisplay Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.agency-info {
+    font-family: 'Acrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 70px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 150px;
+}
+
+.contact-input {}
+
+.contact-input__box {
+    margin-top: 20px;
+    border: none;
+    width: 600px;
+    height: 58px;
+    border-bottom: 2px solid #BDBDBD;
+    outline: none;
+    font-family: 'PF DinDisplay Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #474747;
+}
+
+.contact-input__box:nth-child(4) {
+    margin-top: 60px;
+}
+
+.contact-btn {
+    margin-top: 40px;
+    width: 600px;
+    height: 50px;
+    background-color: #000000;
+    font-family: 'PF DinDisplay Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contacts Page */
+
+/* Project Page */
+
+.breadcrumbs {
+    margin-top: 20px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+    content: '/';
+    margin: 0, 5px;
+    color: #ccc;
+}
+
+.breadcrumbs__link {
+    text-decoration: none;
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    color: #333333;
+}
+
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+}
+
+.product-info {
+    margin-top: 30px;
+}
+
+.product-title {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #333333;
+}
+
+.product-subtitle {
+    margin-top: 15px;
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.product-imgBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.product-img {
+    margin-top: 30px;
+    width: 100%;
+    height: 820px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-imgBox .product-img:nth-child(1) {
+    background-image: url(../images/webp/image7.webp);
+}
+
+.product-imgBox .product-img:nth-child(2) {
+    background-image: url(../images/webp/image8.webp);
+}
+
+.product-imgBox .product-img:nth-child(4) {
+    background-image: url(../images/webp/image11.webp);
+}
+
+.product-imgBox .product-img:nth-child(5) {
+    background-image: url(../images/webp/image12.webp);
+}
+
+.product-collage {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+}
+
+.col-img:nth-child(1) {
+    margin-right: 30px;
+}
+
+.col-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.col-img:nth-child(1) {
+    background-image: url(../images/webp/image9.webp);
+}
+
+.col-img:nth-child(2) {
+    background-image: url(../images/webp/image10.webp);
+}
+
+.product-container {
+    padding: 0 150px;
+}
+
+.next-product {
+    margin-top: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.next-product__info {
+    margin-left: 50px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.next-product__info:hover .next-product__title {
+    text-decoration: underline;
+}
+
+.next-product__title {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    letter-spacing: 0.06em;
+    color: #828282;
+    cursor: pointer;
+}
+
+
+.next-product__subtitle {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #333333;
+    justify-content: end;
+
+}
+
+.next-product__info:hover+.long-arrow {
+    -webkit-animation: arrow-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: arrow-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.long-arrow {
+    flex: 1;
+    width: 100%;
+    height: 40%;
+    background-image: url(../images/webp/ArrowLong.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-service {
+    margin-top: 60px;
+    display: flex;
+}
+
+.service-box {
+    margin-right: 150px;
+}
+
+.service-title {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828282;
+    margin-bottom: 20px;
+}
+
+.service-subtitle {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.footer {
+    height: 110px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-copywrite p {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social__icons {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer-social__icons:nth-child(2) {
+    background-image: url(../images/webp/social1.webp);
+}
+
+.footer-social__icons:nth-child(3) {
+    background-image: url(../images/webp/social2.webp);
+}
+
+.footer-social__icons:nth-child(4) {
+    background-image: url(../images/webp/social3.webp);
+}
+
+.footer-social__text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 50px;
+}
+
+.footer-online {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #219653;
+}
+
+.footer-subtitle {
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/* Project Page */
+
+
+
+/* Key Frames */
+@-webkit-keyframes arrow-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+}
+
+@keyframes arrow-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+}
+
+/* Key Frames */

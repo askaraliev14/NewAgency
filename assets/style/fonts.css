@@ -75,3 +75,45 @@
     font-weight: 100;
     src: url(../fonts/acrobat/Akrobat-Thin.otf);
 }
+
+@font-face {
+    font-family: "PF DinDisplay Pro";
+    font-weight: 800;
+    src: url(../fonts/dindisplay/PFDinDisplayPro-Black.ttf);
+}
+
+@font-face {
+    font-family: "PF DinDisplay Pro";
+    font-weight: 700;
+    src: url(../fonts/dindisplay/PFDinDisplayPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: "PF DinDisplay Pro";
+    font-weight: 600;
+    src: url(../fonts/dindisplay/PFDinDisplayPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: "PF DinDisplay Pro";
+    font-weight: 400;
+    src: url(../fonts/dindisplay/PFDinDisplayPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PF DinDisplay Pro";
+    font-weight: 300;
+    src: url(../fonts/dindisplay/PFDinDisplayPro-Light.ttf);
+}
+
+@font-face {
+    font-family: "PF DinDisplay Pro";
+    font-weight: 200;
+    src: url(../fonts/dindisplay/PFDinDisplayPro-Thin.ttf);
+}
+
+@font-face {
+    font-family: "PF DinDisplay Pro";
+    font-weight: 100;
+    src: url(../fonts/dindisplay/PFDinDisplayPro-ExtraThin.ttf);
+}

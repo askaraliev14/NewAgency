@@ -75,8 +75,9 @@ window.onload = function () {
 }
 
 const swiper = new Swiper('.swiper-container', {
-  slideToClickedSlide: true,
-  slidePerView: "auto",
+  slideToClickedSlide: false,
+  slidePerView: 'auto',
+  autoResize: false,
   freeMode: {
     enabled: true,
     sticky: false,
